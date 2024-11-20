@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.communityNelerYaptikContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 150px;
+    background-color: #EFFFEB;
+}
+.nelerYaptikTitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 42.16px;
+    color: #1D1D1D;
+    margin-bottom: 30px;
+
+}
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card {
+    background-color: #F6F8FF;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    border-bottom: 10px solid #00B666;
+    border-radius: 0 0 50% 50%;
+    box-sizing: border-box;
+}
+.cardImage {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+}  
+.cardCount {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #00C26D;
+} 
+.cardText {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1D1D1D;
+}
+
+@media (max-width: 1024px) {
+    .communityNelerYaptikContainer {
+        padding: 32px 50px; 
+    }
+
+    .nelerYaptikTitle {
+        font-size: 28px; 
+        line-height: 34px;
+    }
+
+    .card {
+        width: 150px;
+        height: 150px; 
+    }
+
+    .cardImage {
+        width: 100px;
+        height: 70px; 
+    }
+
+    .cardCount, .cardText {
+        font-size: 16px; 
+        line-height: 24px;
+    }
+}
+
+/* Mobil Ekranlar (768px altı) */
+@media (max-width: 768px) {
+    .communityNelerYaptikContainer {
+        padding: 16px; 
+    }
+
+    .nelerYaptikTitle {
+        font-size: 24px; 
+        line-height: 30px;
+    }
+
+    .card {
+        width: 130px;
+        height: 130px; 
+    }
+
+    .cardImage {
+        width: 80px;
+        height: 60px; 
+    }
+
+    .cardCount, .cardText {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/* Küçük Mobil Ekranlar (480px altı) */
+@media (max-width: 480px) {
+    .nelerYaptikTitle {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cardImage {
+        width: 60px;
+        height: 40px;
+    }
+
+    .cardCount, .cardText {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
